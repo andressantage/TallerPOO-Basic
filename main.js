@@ -1,3 +1,14 @@
+document.getElementById('miFormulario').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    var nombre = document.getElementById('nombre').value;
+    var edad = document.getElementById('edad').value;
+    var sexo = document.getElementById('sexo').value;
+
+    let persona1=new Persona(nombre,edad,sexo);
+    document.getElementById("saludo").textContent="Resultado: "+persona1.saludar()
+    console.log(persona1.saludar())
+});
+
 class Persona{
     nombre;
     edad;
@@ -8,6 +19,6 @@ class Persona{
         this.sexo=sexo;
     }
     saludar(){
-        return `Hola ${nombre}` 
+        return `Hola ${this.nombre} buen dia` 
     }
 }
