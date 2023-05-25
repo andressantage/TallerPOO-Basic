@@ -1,26 +1,33 @@
-# English-App
-
-## Obejtivos desarrollo inicial
-Aplicacion de ingles para aprender vocabulario de 1200 palabras
+# Taller POO Basic
 
 ## Descripcion
-Aplicacion de ingles para aprender vocabulario de 3000 palabras
+En este repositorio hice uso de las tecnologias de HTML, css y javascript para realizar los ejercicios del taller basico de programacion orientada a objetos.
 
-### Caracteristicas de la aplicación web
-- 3000 palabras con su respectiva traduccion a ingles y español
-- Lenguje fonético de las palabras
-- Palabras seccionadas en los diferentes tipos de palabra y clase
-- Audio de las palabras en ingles americano y algunas en britanico
-- Secciones de practica para listening (escucha), y speaking, writing y reading en una sola sección
-- Aplicativo con diseño responsivo para smartphone y pc
-- Diseño personalizable
+### Caracteristicas
+Con el fin de reutilizar y poder conjugar mas relaciones entre los datos hice uso de datos anteriores para hacer que en cada bloque de ejercicios tuviesen un mejor contexto y continuidad.
+Por ejemplo en el taller habian bloques puntos que se relacionaban entre si por ello decidi concatenarlos en un solo bloque en el html y javascript, de este forma datos del bloque del punto 1 y 2 son reutilizados en el bloque para el 3er y 4to ejercicio, asi sucesivamente para los demas ejercicios.
 
-#### Diseño personalizable
+#### Contenido del repositorio
+El repositorio contiene los siguientes elementos:
 
-En base a que el usuario ya tiene cierto vocabulario la aplicación tiene un diseño para
-que al dar click el usuario en unos botones pueda definir que palabras le muestre con 
-mayor frecuencia para de esta forma usar el metodo de memorización espaciada y se pueda
-generar retención a largo plazo en la memoria.
+index.html: Archivo HTML principal que muestra la interfaz del taller y permite interactuar con los ejercicios. Los estilos CSS estan contenidos en el index.html
+main.js: Archivo JavaScript que contiene la lógica de los ejercicios de programación orientada a objetos.
 
-La aplicación tiene la posibilidad de cambiar la imagen de la palabra, enviar feedback y
-con modo nocturno y diurno
+### Cómo utilizar el repositorio
+Para utilizar este repositorio, sigue los siguientes pasos:
+
+Clona el repositorio en tu máquina local utilizando el siguiente comando:
+
+`git clone https://github.com/tu-usuario/taller-poo-basic.git`
+
+Abre el archivo index.html en tu navegador web para acceder a la página principal del taller.
+
+Explora los ejercicios de POO implementados en la página y sigue las instrucciones proporcionadas para interactuar con ellos.
+
+### Contribuciones
+Cualquier feedback sera bien recibido.
+
+### Licencia
+Este proyecto está bajo la Licencia MIT. Puedes consultar el archivo LICENSE para obtener más información sobre los derechos y restricciones de uso.
+
+El taller me ayudo a comprender los conceptos básicos de la Programación Orientada a Objetos y para memorizar los conceptos visto en clase.
