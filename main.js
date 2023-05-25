@@ -1,3 +1,23 @@
+//sonidos de animales:
+const sonidosAnimales = {
+    perro: 'Guau guau',
+    gato: 'Miau miau',
+    vaca: 'Muu muu',
+    caballo: '¡iiiiiiiih!',
+    oveja: 'Beee beee',
+    leon: '¡Rugido!',
+    mono: 'Uga uga',
+    elefante: 'Barrito',
+    tigre: 'Grrrr',
+    raton: 'Chirp chirp',
+    serpiente: 'Sssss',
+    pato: 'Cuac cuac',
+    rana: 'Croac croac',
+    gallina: 'Kikirikí',
+    pajaro: 'Pío pío',
+    burro: 'Iooooonk'
+};
+
 let nombre
 let edad
 let sexo
@@ -9,7 +29,6 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     sexo = document.getElementById('sexo').value;
     persona1=new Persona(nombre,edad,sexo);
     document.getElementById("saludo").textContent="Resultado: "+persona1.saludar()
-    console.log(persona1.saludar())
 });
 
 class Persona{
@@ -63,19 +82,24 @@ class Animal{
         this.edad=edad;
     }
     hacerSonido(){
-        return `Sonido del animal ${this.nombre} es` 
+        if(this.nombre in sonidosAnimales){
+            let sonido=sonidosAnimales[this.nombre]
+            return `Sonido del animal ${this.nombre} es ${sonido}` 
+        }else{
+            return `El sonido del animal ${this.nombre} no existe`
+        }
     }
 }
 let animal1
 let nombreAnimal
 let edadAnimal
-document.getElementById('miFormulario3').addEventListener('submit', function(event) {
+/* document.getElementById('miFormulario3').addEventListener('submit', function(event) {
     event.preventDefault(); 
     nombreAnimal = document.getElementById('nombreAnimal').value;
     edadAnimal = document.getElementById('nombreAnimal').value;
     animal1=new Animal(nombreAnimal,nombreAnimal);
     document.getElementById("imprimirSonidoAnimal").textContent=animal1.hacerSonido()
-});
+}); */
 
 class Perro extends Animal{
     constructor(nombre,edad,raza){
@@ -92,12 +116,18 @@ let edadPerro
 let raza
 document.getElementById('miFormulario4').addEventListener('submit', function(event) {
     event.preventDefault(); 
-    nombrePerro = document.getElementById('nombrePerro').value;
+    nombrePerro = document.getElementById('nombrePerro').value.toLowerCase();
     edadPerro = document.getElementById('edadPerro').value;
     raza = document.getElementById('raza').value;
     perro1=new Perro(nombrePerro,edadPerro,raza);
     document.getElementById("imprimirPerro").textContent=perro1.moverCola()
 });
+document.getElementById('sonar').addEventListener('click', function() {
+    console.log(perro1)
+    document.getElementById("imprimirSonidoAnimal").textContent=perro1.hacerSonido()
+});
+
+
 ////////////
 class Figura{
     constructor(color,area){
