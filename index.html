@@ -162,8 +162,142 @@ queelperroestámoviendolacola. -->
 <!-- Crea una clase llamada Figura con las siguientes propiedades:
 color y area. La clase debe tener un método llamado
 calcularArea()queretorneeláreadelafigura. -->
+<!-- Crea una instancia de la clase Figura llamada figura1 y asigna
+valores a sus propiedades. Luego, llama al método
+calcularArea()ymuestrael resultadoenelHTML. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 10 y 11</h1>
+</div>
+<div class="container">
+  <form id="miFormulario5">
+    <div class="form-group">
+      <label for="area">Area:</label>
+      <input type="number" class="form-control" id="area">
+    </div>
+    <div class="form-group">
+      <label for="color">Color:</label>
+      <input type="text" class="form-control" id="color">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Calcular area">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirArea"></h1>
+</div>
+<!-- Crea una clase llamada Circulo que herede de la clase Figura.
+Agrega una nueva propiedad llamada radio y redefine el
+métodocalcularArea()paraquecalculeeláreadelcírculo. -->
+<!-- Crea una instancia de la clase Circulo llamada circulo1 y asigna
+valores a sus propiedades. Luego, llama al método
+calcularArea()ymuestrael resultadoenelHTML. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 12 y 13</h1>
+</div>
+<div class="container">
+  <form id="miFormulario6">
+    <div class="form-group">
+      <label for="radio">Radio del circulo:</label>
+      <input type="number" class="form-control" id="radio">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Calcular area del circulo">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirAreaCirculo"></h1>
+</div>
 
+<!-- Crea una clase llamada Rectangulo que herede de la clase
+Figura. Agrega nuevas propiedades llamadas largo y ancho y
+redefine el método calcularArea() para que calcule el área del
+rectángulo. -->
+<!-- CreaunainstanciadelaclaseRectangulollamadarectangulo1y
+asigna valores a sus propiedades. Luego, llama al método
+calcularArea()ymuestrael resultadoenelHTML. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 14 y 15</h1>
+</div>
+<div class="container">
+  <form id="miFormulario7">
+    <div class="form-group">
+      <label for="largo">Largo:</label>
+      <input type="number" class="form-control" id="largo">
+    </div>
+    <div class="form-group">
+      <label for="ancho">Ancho:</label>
+      <input type="number" class="form-control" id="ancho">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Calcular area del rectangulo">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirAreaRectangulo"></h1>
+</div>
 
+<!-- Creauna clasellamadaVehiculoconlas siguientespropiedades:
+marca, modelo y velocidad. La clase debe tener un método
+llamado acelerar() que incremente la velocidad del vehículo en
+10unidades. -->
+<!-- Crea una instancia de la clase Vehiculo llamada vehiculo1 y
+asigna valores a sus propiedades. Luego, llama al método
+acelerar() y muestra la velocidad actual en el HTML. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 16 y 17</h1>
+</div>
+<div class="container">
+  <form id="miFormulario8">
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <input type="text" class="form-control" id="marca">
+    </div>
+    <div class="form-group">
+      <label for="modelo">Modelo:</label>
+      <input type="text" class="form-control" id="modelo">
+    </div>
+    <div class="form-group">
+      <label for="velocidad">Velocidad:</label>
+      <input type="number" class="form-control" id="velocidad">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Calcular velocidad actual">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="velocidadActual"></h1>
+</div>
+
+<!-- Crea una clase llamada Coche que herede de la claseVehiculo.
+Agrega una nueva propiedad llamada combustible y redefineel
+método acelerar() para que incremente la velocidad del coche
+en20unidades. -->
+<!-- Crea una instancia de la clase Coche llamada coche1 y asigna
+valores a sus propiedades. Luego, llama al método acelerar() y
+muestralavelocidadactualenelHTML.
+ -->
+ <div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 18 y 19</h1>
+</div>
+<div class="container">
+  <form id="miFormulario9">
+    <div class="form-group">
+      <label for="combustible">Combustible:</label>
+      <input type="text" class="form-control" id="combustible">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Calcular velocidad actual">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirCoche"></h1>
+</div>
+
+<!-- Agrega un método estático a la clase Vehiculo llamado
+convertirKmHEnMph() que reciba una velocidad en kilómetros
+por hora y retorne la velocidad equivalente en millas por hora.
+Para ello, divide la velocidad en kilómetros por hora entre
+1.60934. -->
 
 
 

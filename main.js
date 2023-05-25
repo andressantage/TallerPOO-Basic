@@ -98,5 +98,116 @@ document.getElementById('miFormulario4').addEventListener('submit', function(eve
     perro1=new Perro(nombrePerro,edadPerro,raza);
     document.getElementById("imprimirPerro").textContent=perro1.moverCola()
 });
+////////////
+class Figura{
+    constructor(color,area){
+        this.color=color;
+        this.area=area;
+    }
+    calcularArea(){
+        return `El area de la figura es ${this.area}`
+    }
+}
+let figura1
+let area
+let color
+document.getElementById('miFormulario5').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    area = document.getElementById('area').value;
+    color = document.getElementById('color').value;
+
+    figura1=new Figura(color,area)
+    document.getElementById("imprimirArea").textContent=figura1.calcularArea()
+});
+
+class Cicurlo extends Figura{
+    constructor(color,area,radio){
+        super(color,area)
+        this.radio=radio;
+    }
+    calcularArea(){
+        const pi = Math.PI;
+        return `El area del circulo es ${pi*this.radio*this.radio}`
+    }
+}
+let circulo1
+let radio
+document.getElementById('miFormulario6').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    radio = document.getElementById('radio').value;
+
+    circulo1=new Cicurlo(color,area,radio)
+    document.getElementById("imprimirAreaCirculo").textContent=circulo1.calcularArea()
+});
+
+class Rectangulo extends Figura{
+    constructor(color,area,largo,ancho){
+        super(color,area)
+        this.largo=largo;
+        this.ancho=ancho;
+    }
+    calcularArea(){
+        return `El area del rectangulo es ${this.largo*this.ancho}`
+    }
+}
+let rectangulo1
+let largo
+let ancho
+document.getElementById('miFormulario7').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    largo = document.getElementById('largo').value;
+    ancho = document.getElementById('ancho').value;
+
+    rectangulo1=new Rectangulo(color,area,largo,ancho)
+    document.getElementById("imprimirAreaRectangulo").textContent=rectangulo1.calcularArea()
+});
+
+///////////////
+class Vehiculo{
+    constructor(marca,modelo,velocidad){
+        this.marca=marca;
+        this.modelo=modelo;
+        this.velocidad=velocidad;
+    }
+    acelerar(){
+        let aumento=parseInt(this.velocidad)+10
+        return `La velocidad actual es ${aumento}`
+    }
+}
+let vehiculo1
+let marca
+let modelo
+let velocidad
+document.getElementById('miFormulario8').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    marca = document.getElementById('marca').value;
+    modelo = document.getElementById('modelo').value;
+    velocidad = document.getElementById('velocidad').value;
+
+    vehiculo1=new Vehiculo(marca,modelo,velocidad)
+    document.getElementById("velocidadActual").textContent=vehiculo1.acelerar()
+});
+
+class Coche extends Vehiculo{
+    constructor(marca,modelo,velocidad,combustible){
+        super(marca,modelo,velocidad)
+        this.combustible=combustible;
+    }
+    acelerar(){
+        let aumento=parseInt(this.velocidad)+20
+        return `La velocidad actual es ${aumento}`
+    }
+}
+let coche1
+let combustible
+document.getElementById('miFormulario9').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    combustible = document.getElementById('combustible').value;
+
+    coche1=new Coche(marca,modelo,velocidad,combustible)
+    document.getElementById("imprimirCoche").textContent=coche1.acelerar()
+});
+
+
 
 
