@@ -298,16 +298,108 @@ convertirKmHEnMph() que reciba una velocidad en kilómetros
 por hora y retorne la velocidad equivalente en millas por hora.
 Para ello, divide la velocidad en kilómetros por hora entre
 1.60934. -->
+<!-- Llama al método estático convertirKmHEnMph() pasando una
+velocidad en kilómetros por hora y muestra el resultado en el
+HTML -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 20 y 21</h1>
+</div>
+<div class="container">
+  <form id="miFormulario10">
+    <input type="submit" class="btn btn-primary" value="Convertir velocidad a millas/hora">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirConversion"></h1>
+</div>
 
+<!-- Crea una clase llamada Empleado con las siguientes
+propiedades: nombre, edad y sueldo. La clase debe tener un
+método llamado calcularSalarioAnual() que retorne el salario
+anualdelempleadomultiplicandoel sueldomensualpor12 -->
+<!-- Crea una instancia de la clase Empleado llamada empleado1 y
+asigna valores a sus propiedades. Luego, llama al método
+calcularSalarioAnual()ymuestrael resultadoenelHTML. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 22 y 23</h1>
+</div>
+<div class="container">
+  <form id="miFormulario11">
+    <div class="form-group">
+      <label for="nombreEmpleado">Nombre:</label>
+      <input type="text" class="form-control" id="nombreEmpleado" placeholder="Ingresa nombre">
+    </div>
+    <div class="form-group">
+      <label for="edadEmpleado">Edad:</label>
+      <input type="number" class="form-control" id="edadEmpleado" placeholder="Ingresa edad">
+    </div>
+    <div class="form-group">
+      <label for="sueldoEmpleado">Sueldo:</label>
+      <input type="number" class="form-control" id="sueldoEmpleado" placeholder="Ingresa sueldo">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Imprimir sueldo anual del empleado">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirSuedo"></h1>
+</div>
 
+<!-- Crea una clase llamada Gerente que herede de la clase
+Empleado.Agregaunanuevapropiedadllamadadepartamento
+y redefine el método calcularSalarioAnual() para que calcule el
+salario anual del gerente sumando un bono del 10% al salario
+mensualantesdemultiplicarlopor12 -->
+<!-- Crea una instancia de la clase Gerente llamada gerente1 y
+asigna valores a sus propiedades. Luego, llama al método
+calcularSalarioAnual()ymuestrael resultadoenelHTML. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 24 y 25</h1>
+</div>
+<div class="container">
+  <form id="miFormulario12">
+    <div class="form-group">
+      <label for="nombreGerente">Nombre:</label>
+      <input type="text" class="form-control" id="nombreGerente" placeholder="Ingresa nombre">
+    </div>
+    <div class="form-group">
+      <label for="edadGerente">Edad:</label>
+      <input type="number" class="form-control" id="edadGerente" placeholder="Ingresa edad">
+    </div>
+    <div class="form-group">
+      <label for="sueldoGerente">Sueldo:</label>
+      <input type="number" class="form-control" id="sueldoGerente" placeholder="Ingresa sueldo">
+    </div>
+    <div class="form-group">
+      <label for="departamento">Departamento:</label>
+      <input type="text" class="form-control" id="departamento" placeholder="Ingresa departamento">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Imprimir sueldo anual del gerente">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirSuedoGerente"></h1>
+</div>
 
-
-
-
-
-
-
-
+<!-- Agrega un método estático a la clase Empleado llamado
+generarIdEmpleado() que retorne un ID único para cada
+empleado. Puedes utilizar una variable estática para ir
+incrementando el ID cada vez que se cree una instancia de
+Empleado. -->
+<!-- Llama al método estático generarIdEmpleado() y muestra el
+resultadoenlaconsola. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Ejercicio 26 y 27</h1>
+</div>
+<div class="container">
+  <button id="boton" class="btn btn-primary">Llamar al metodo estático generarIdEmpleado()</button>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <div id="llamar"></div>
+</div>
 
 
 </body>

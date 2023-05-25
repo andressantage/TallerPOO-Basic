@@ -173,6 +173,10 @@ class Vehiculo{
         let aumento=parseInt(this.velocidad)+10
         return `La velocidad actual es ${aumento}`
     }
+    static convertirKmHEnMph(velocidad){
+        let conv=(parseInt(velocidad))/1.60934
+        return `Velocidad en mi/h es ${conv}`
+    }
 }
 let vehiculo1
 let marca
@@ -208,6 +212,77 @@ document.getElementById('miFormulario9').addEventListener('submit', function(eve
     document.getElementById("imprimirCoche").textContent=coche1.acelerar()
 });
 
+document.getElementById('miFormulario10').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    vehiculo1=new Vehiculo(marca,modelo,velocidad)
+    document.getElementById("imprimirConversion").textContent=Vehiculo.convertirKmHEnMph(vehiculo1.velocidad)
+});
 
 
+/////////////////
+class Empleado{
+    constructor(nombre,edad,sueldo){
+        this.nombre=nombre;
+        this.edad=edad;
+        this.sueldo=sueldo;
+        this.id = Empleado.generarIdEmpleado();
+    }
+    calcularSalarioAnual(){
+        let sueldazo=parseFloat(this.sueldo)
+        return `Salario anual: ${12*sueldazo}`
+    }
+    static generarIdEmpleado(){
+        if (!Empleado.contador) {
+            Empleado.contador = 1;
+        }
+        const id = Empleado.contador;
+        Empleado.contador++;
+        return id;
+    }
+}
+let empleado1
+let nombreEmpleado
+let edadEmpleado
+let sueldoEmpleado
+document.getElementById('miFormulario11').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    nombreEmpleado = document.getElementById('nombreEmpleado').value;
+    edadEmpleado = document.getElementById('edadEmpleado').value;
+    sueldoEmpleado = document.getElementById('sueldoEmpleado').value;
 
+    empleado1=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado)
+    document.getElementById("imprimirSuedo").textContent=empleado1.calcularSalarioAnual()
+});
+
+class Gerente extends Empleado{
+    constructor(nombre,edad,sueldo,departamento){
+        super(nombre,edad,sueldo)
+        this.departamento=departamento;
+    }
+    calcularSalarioAnual(){
+        let sueld=parseFloat(this.sueldo)
+        return `Salario gerente: ${12*(sueld+0.1*sueld)}`
+    }
+}
+let gerente1
+let nombreGerente
+let edadGerente
+let sueldoGerente
+let departamento
+document.getElementById('miFormulario12').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    nombreGerente = document.getElementById('nombreGerente').value;
+    edadGerente = document.getElementById('edadGerente').value;
+    sueldoGerente = document.getElementById('sueldoGerente').value;
+    departamento = document.getElementById('departamento').value;
+
+    gerente1=new Gerente(nombreGerente,edadGerente,sueldoGerente,departamento)
+    document.getElementById("imprimirSuedoGerente").textContent=gerente1.calcularSalarioAnual()
+});
+
+//Llamada a metodo estatico
+document.getElementById('boton').addEventListener("click", function() {
+    empleado1=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=1
+    empleado2=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=2
+    document.getElementById("llamar").innerHTML="<h1>"+ Empleado.generarIdEmpleado() +"</h1>"
+});
