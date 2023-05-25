@@ -5,7 +5,6 @@ En este repositorio hice uso de las tecnologias de HTML, css y javascript para r
 
 ### Caracteristicas
 Con el fin de reutilizar y poder conjugar mas relaciones entre los datos hice uso de datos anteriores para hacer que en cada bloque de ejercicios tuviesen un mejor contexto y continuidad.
-Por ejemplo en el taller habian bloques puntos que se relacionaban entre si por ello decidi concatenarlos en un solo bloque en el html y javascript, de este forma datos del bloque del punto 1 y 2 son reutilizados en el bloque para el 3er y 4to ejercicio, asi sucesivamente para los demas ejercicios.
 
 ### Contenido del repositorio
 El repositorio contiene los siguientes elementos:

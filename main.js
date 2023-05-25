@@ -281,8 +281,9 @@ document.getElementById('miFormulario12').addEventListener('submit', function(ev
 });
 
 //Llamada a metodo estatico
+let empleado2
+empleado1=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=1
+empleado2=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=2
 document.getElementById('boton').addEventListener("click", function() {
-    empleado1=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=1
-    empleado2=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=2
     document.getElementById("llamar").innerHTML="<h1>"+ Empleado.generarIdEmpleado() +"</h1>"
 });
