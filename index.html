@@ -14,15 +14,18 @@
             background-color: black;
             color: white;
         }
-    </style>
+     </style>
 </head>
 <body>
 <!-- Crea una clase llamada Persona que tenga las siguientes
 propiedades:nombre,edad, sexoyunmétodollamadosaludar
 que imprima en la consola un saludo con el nombre de la
 persona. -->
+<!-- Crea una instancia de la clase Persona llamada persona1 y
+asigna valores a sus propiedades. Luego, llama al método
+saludar()paraquelapersonaimprimasusaludo. -->
 <div class="d-flex justify-content-center align-items-center mt-4">
-    <h1>Primer ejercicio</h1>
+    <h1>Primer y segundo ejercicio</h1>
 </div>
 
 <div class="container">
@@ -33,7 +36,7 @@ persona. -->
       </div>
       <div class="form-group">
         <label for="edad">Edad:</label>
-        <input type="number" class="form-control" id="edad" placeholder="Ingresa tu email">
+        <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad">
       </div>
       <div class="form-group">
         <label for="seleccion">Selecciona una opción:</label>
@@ -45,11 +48,63 @@ persona. -->
       </div>
       <input type="submit" class="btn btn-primary" value="Imprimir saludo">
     </form>
-  </div>
+</div>
 
 <div class="d-flex justify-content-center align-items-center mt-4">
     <h1 id="saludo"></h1>
 </div>
+
+<!-- Crea una clase llamada Estudiante que herede de la clase
+Persona. Agrega una nueva propiedad llamada carrera y un
+método llamado estudiar que imprima en la consola un
+mensajeindicandolacarreraqueestáestudiando. -->
+<!-- Crea una instancia de la clase Estudiantellamada estudiante1 y
+asigna valores a sus propiedades. Luego, llama al método
+saludar() para que el estudiante imprima su saludo y al método
+estudiar() para que el estudiante imprima el mensaje de su
+carrera. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Tercer y cuarto ejercicio</h1>
+</div>
+<div class="container">
+  <form id="miFormulario1">
+    <div class="form-group">
+      <label for="carrera">Carrera:</label>
+      <input type="text" class="form-control" id="carrera" placeholder="Ingresa carrera">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Imprimir carrera">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirSaludo"></h1>
+  <h1 id="imprimirCarrera"></h1>
+</div>
+
+<!-- Agrega un método estático a la clase Persona llamado
+esMayorDeEdad que reciba la edad de una persona como
+parámetro y retorne true si la persona es mayor de edad (18
+añosomás),ofalseencasocontrario -->
+<!-- Llama al método estático esMayorDeEdad() pasando la edad de
+lapersona1ymuestrael resultadoenlaconsola. -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Quinto y sexto ejercicio</h1>
+</div>
+<div class="container">
+  <form id="miFormulario2">
+    <div class="form-group">
+      <label for="carrera">¿Es mayor de edad?</label>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Imprimir respueta">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
+  <h1>Resultado:</h1>
+  <h1 id="imprimirResEdad"></h1>
+</div>
+
+
+
 
 </body>
 </html>
