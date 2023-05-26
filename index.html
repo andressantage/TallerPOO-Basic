@@ -15,11 +15,13 @@
             color: white;
         }
         .linea{
-          border-top: 1px solid wheat;
+          border-bottom: 1px solid wheat;
         }
-/*         .a{
+       div > h1{
+          width: 90%;
           font-size: 2rem;
-        } */
+          text-align: center;
+        } 
      </style>
 </head>
 <body>
@@ -47,7 +49,6 @@ saludar()paraquelapersonaimprimasusaludo. -->
       <div class="form-group">
         <label for="seleccion">Selecciona una opción:</label>
         <select class="form-control" id="sexo">
-    <!-- <option value="">Sexo:</option> -->
           <option value="opcion1">Masculino</option>
           <option value="opcion2">Femenino</option>
         </select>
@@ -69,9 +70,6 @@ asigna valores a sus propiedades. Luego, llama al método
 saludar() para que el estudiante imprima su saludo y al método
 estudiar() para que el estudiante imprima el mensaje de su
 carrera. -->
-<!-- #############<div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Tercer y cuarto ejercicio</h1>
-</div> -->
 <div class="container">
   <form id="miFormulario1">
     <div class="form-group">
@@ -82,7 +80,6 @@ carrera. -->
   </form>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <h1 id="imprimirSaludo"></h1>
   <h1 id="imprimirCarrera"></h1>
 </div>
@@ -93,9 +90,6 @@ parámetro y retorne true si la persona es mayor de edad (18
 añosomás),ofalseencasocontrario -->
 <!-- Llama al método estático esMayorDeEdad() pasando la edad de
 lapersona1ymuestrael resultadoenlaconsola. -->
-<!-- #############<<div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Quinto y sexto ejercicio</h1>
-</div> -->
 <div class="container">
   <form id="miFormulario2">
     <div class="form-group">
@@ -104,8 +98,7 @@ lapersona1ymuestrael resultadoenlaconsola. -->
     <input type="submit" class="btn btn-primary" value="Imprimir respueta">
   </form>
 </div>
-<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1 class="a">Resultado:</h1>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column linea">
   <h1 id="imprimirResEdad"></h1>
 </div>
 
@@ -115,38 +108,13 @@ hacerSonidoqueimprimaenlaconsolael sonidodelanimal. -->
 <!-- Crea una instancia de la clase Animal llamada animal1 y asigna
 valores a sus propiedades. Luego, llama al método
 hacerSonido()paraqueelanimalimprimasusonido. -->
-<!-- #############<<div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Septimo y octavo ejercicio</h1>
-</div> -->
-<div class="d-flex justify-content-center align-items-center mt-4 linea">
-  <h1>Segundo ejercicio: Animal</h1>
-</div>
-<!-- ELIMINE AQUI -->
-<!-- <div class="container">
-  <form id="miFormulario3">
-    <div class="form-group">
-      <label for="nombreAnimal">Nombre:</label>
-      <input type="text" class="form-control" id="nombreAnimal" placeholder="Ingresa nombre del animal">
-    </div>
-    <div class="form-group">
-      <label for="edadAnimal">Edad:</label>
-      <input type="number" class="form-control" id="edadAnimal" placeholder="Ingresa edad del animal">
-    </div>
-    <input type="submit" class="btn btn-primary" value="Imprimir sonido">
-  </form>
-</div>
-<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
-  <h1 id="imprimirSonidoAnimal"></h1>
-</div> -->
-
 <!-- Crea una clase llamada Perro que herede de la clase Animal.
 Agregaunanuevapropiedadllamadarazayunmétodollamado
 moverCola que imprima en la consola un mensaje indicando
 queelperroestámoviendolacola. -->
-<!-- ########################<div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Noveno ejercicio</h1>
-</div> -->
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <h1>Segundo ejercicio: Animal</h1>
+</div>
 <div class="container">
   <form id="miFormulario4">
     <div class="form-group">
@@ -165,17 +133,13 @@ queelperroestámoviendolacola. -->
   </form>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <h1 id="imprimirPerro"></h1>
 </div>
 
 <div class="container">
   <button id="sonar" class="btn btn-primary">Imprimir sonido</button>
 </div>
-
-
-<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column linea">
   <h1 id="imprimirSonidoAnimal"></h1>
 </div>
 
@@ -188,7 +152,7 @@ calcularArea()ymuestrael resultadoenelHTML. -->
 <!-- <div class="d-flex justify-content-center align-items-center mt-4">
   <h1>Ejercicio 10 y 11</h1>
 </div> -->
-<div class="d-flex justify-content-center align-items-center mt-4 linea">
+<div class="d-flex justify-content-center align-items-center mt-4">
   <h1>Tercer ejercicio</h1>
 </div>
 <div class="container">
@@ -205,7 +169,6 @@ calcularArea()ymuestrael resultadoenelHTML. -->
   </form>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <h1 id="imprimirArea"></h1>
 </div>
 <!-- Crea una clase llamada Circulo que herede de la clase Figura.
@@ -214,9 +177,6 @@ métodocalcularArea()paraquecalculeeláreadelcírculo. -->
 <!-- Crea una instancia de la clase Circulo llamada circulo1 y asigna
 valores a sus propiedades. Luego, llama al método
 calcularArea()ymuestrael resultadoenelHTML. -->
-<!-- <div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Ejercicio 12 y 13</h1>
-</div> -->
 <div class="container">
   <form id="miFormulario6">
     <div class="form-group">
@@ -227,7 +187,6 @@ calcularArea()ymuestrael resultadoenelHTML. -->
   </form>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <h1 id="imprimirAreaCirculo"></h1>
 </div>
 
@@ -254,8 +213,7 @@ calcularArea()ymuestrael resultadoenelHTML. -->
     <input type="submit" class="btn btn-primary" value="Calcular area del rectangulo">
   </form>
 </div>
-<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column linea">
   <h1 id="imprimirAreaRectangulo"></h1>
 </div>
 
@@ -266,10 +224,7 @@ llamado acelerar() que incremente la velocidad del vehículo en
 <!-- Crea una instancia de la clase Vehiculo llamada vehiculo1 y
 asigna valores a sus propiedades. Luego, llama al método
 acelerar() y muestra la velocidad actual en el HTML. -->
-<!-- <div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Ejercicio 16 y 17</h1>
-</div> -->
-<div class="d-flex justify-content-center align-items-center mt-4 linea">
+<div class="d-flex justify-content-center align-items-center mt-4">
   <h1>Cuarto ejercicio</h1>
 </div>
 <div class="container">
@@ -290,10 +245,8 @@ acelerar() y muestra la velocidad actual en el HTML. -->
   </form>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <h1 id="velocidadActual"></h1>
 </div>
-
 <!-- Crea una clase llamada Coche que herede de la claseVehiculo.
 Agrega una nueva propiedad llamada combustible y redefineel
 método acelerar() para que incremente la velocidad del coche
@@ -302,9 +255,6 @@ en20unidades. -->
 valores a sus propiedades. Luego, llama al método acelerar() y
 muestralavelocidadactualenelHTML.
  -->
-<!--  <div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Ejercicio 18 y 19</h1>
-</div> -->
 <div class="container">
   <form id="miFormulario9">
     <div class="form-group">
@@ -315,10 +265,8 @@ muestralavelocidadactualenelHTML.
   </form>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <h1 id="imprimirCoche"></h1>
 </div>
-
 <!-- Agrega un método estático a la clase Vehiculo llamado
 convertirKmHEnMph() que reciba una velocidad en kilómetros
 por hora y retorne la velocidad equivalente en millas por hora.
@@ -327,16 +275,12 @@ Para ello, divide la velocidad en kilómetros por hora entre
 <!-- Llama al método estático convertirKmHEnMph() pasando una
 velocidad en kilómetros por hora y muestra el resultado en el
 HTML -->
-<!-- <div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Ejercicio 20 y 21</h1>
-</div> -->
 <div class="container">
   <form id="miFormulario10">
     <input type="submit" class="btn btn-primary" value="Convertir velocidad a millas/hora">
   </form>
 </div>
-<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column linea">
   <h1 id="imprimirConversion"></h1>
 </div>
 
@@ -347,10 +291,7 @@ anualdelempleadomultiplicandoel sueldomensualpor12 -->
 <!-- Crea una instancia de la clase Empleado llamada empleado1 y
 asigna valores a sus propiedades. Luego, llama al método
 calcularSalarioAnual()ymuestrael resultadoenelHTML. -->
-<!-- <div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Ejercicio 22 y 23</h1>
-</div> -->
-<div class="d-flex justify-content-center align-items-center mt-4 linea">
+<div class="d-flex justify-content-center align-items-center mt-4">
   <h1>Quinto ejercicio</h1>
 </div>
 <div class="container">
@@ -370,8 +311,7 @@ calcularSalarioAnual()ymuestrael resultadoenelHTML. -->
     <input type="submit" class="btn btn-primary" value="Imprimir sueldo anual del empleado">
   </form>
 </div>
-<div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
+<div class="d-flex justify-content-center align-items-center mt-4 flex-column linea">
   <h1 id="imprimirSuedo"></h1>
 </div>
 
@@ -383,10 +323,7 @@ mensualantesdemultiplicarlopor12 -->
 <!-- Crea una instancia de la clase Gerente llamada gerente1 y
 asigna valores a sus propiedades. Luego, llama al método
 calcularSalarioAnual()ymuestrael resultadoenelHTML. -->
-<!-- <div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Ejercicio 24 y 25</h1>
-</div> -->
-<div class="d-flex justify-content-center align-items-center mt-4 linea">
+<div class="d-flex justify-content-center align-items-center mt-4">
   <h1>Ejercicio sexto</h1>
 </div>
 <div class="container">
@@ -411,10 +348,8 @@ calcularSalarioAnual()ymuestrael resultadoenelHTML. -->
   </form>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <h1 id="imprimirSuedoGerente"></h1>
 </div>
-
 <!-- Agrega un método estático a la clase Empleado llamado
 generarIdEmpleado() que retorne un ID único para cada
 empleado. Puedes utilizar una variable estática para ir
@@ -422,14 +357,10 @@ incrementando el ID cada vez que se cree una instancia de
 Empleado. -->
 <!-- Llama al método estático generarIdEmpleado() y muestra el
 resultadoenlaconsola. -->
-<!-- <div class="d-flex justify-content-center align-items-center mt-4">
-  <h1>Ejercicio 26 y 27</h1>
-</div> -->
 <div class="container">
   <button id="boton" class="btn btn-primary">Llamar al metodo estático generarIdEmpleado()</button>
 </div>
 <div class="d-flex justify-content-center align-items-center mt-4 flex-column">
-  <h1>Resultado:</h1>
   <div id="llamar"></div>
 </div>
 

@@ -67,13 +67,13 @@ document.getElementById('miFormulario1').addEventListener('submit', function(eve
     let carrera = document.getElementById('carrera').value;
 
     let estudiante1=new Estudiante(nombre,edad,sexo,carrera);
-    document.getElementById("imprimirSaludo").textContent=estudiante1.saludar()
-    document.getElementById("imprimirCarrera").textContent=estudiante1.estudiar()
+    document.getElementById("imprimirSaludo").textContent="Resultado1: "+estudiante1.saludar()
+    document.getElementById("imprimirCarrera").textContent="Resultado2: "+estudiante1.estudiar()
 });
 
 document.getElementById('miFormulario2').addEventListener('submit', function(event) {
     event.preventDefault(); 
-    document.getElementById("imprimirResEdad").textContent=Persona.esMayorDeEdad(persona1.edad)
+    document.getElementById("imprimirResEdad").textContent="Resultado: "+Persona.esMayorDeEdad(persona1.edad)
 });
 ///////////
 class Animal{
@@ -93,14 +93,6 @@ class Animal{
 let animal1
 let nombreAnimal
 let edadAnimal
-/* document.getElementById('miFormulario3').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    nombreAnimal = document.getElementById('nombreAnimal').value;
-    edadAnimal = document.getElementById('nombreAnimal').value;
-    animal1=new Animal(nombreAnimal,nombreAnimal);
-    document.getElementById("imprimirSonidoAnimal").textContent=animal1.hacerSonido()
-}); */
-
 class Perro extends Animal{
     constructor(nombre,edad,raza){
         super(nombre,edad)
@@ -120,11 +112,11 @@ document.getElementById('miFormulario4').addEventListener('submit', function(eve
     edadPerro = document.getElementById('edadPerro').value;
     raza = document.getElementById('raza').value;
     perro1=new Perro(nombrePerro,edadPerro,raza);
-    document.getElementById("imprimirPerro").textContent=perro1.moverCola()
+    document.getElementById("imprimirPerro").textContent="Resultado: "+perro1.moverCola()
 });
 document.getElementById('sonar').addEventListener('click', function() {
     console.log(perro1)
-    document.getElementById("imprimirSonidoAnimal").textContent=perro1.hacerSonido()
+    document.getElementById("imprimirSonidoAnimal").textContent="Resultado: "+perro1.hacerSonido()
 });
 
 
@@ -147,7 +139,7 @@ document.getElementById('miFormulario5').addEventListener('submit', function(eve
     color = document.getElementById('color').value;
 
     figura1=new Figura(color,area)
-    document.getElementById("imprimirArea").textContent=figura1.calcularArea()
+    document.getElementById("imprimirArea").textContent="Resultado: "+figura1.calcularArea()
 });
 
 class Cicurlo extends Figura{
@@ -167,7 +159,7 @@ document.getElementById('miFormulario6').addEventListener('submit', function(eve
     radio = document.getElementById('radio').value;
 
     circulo1=new Cicurlo(color,area,radio)
-    document.getElementById("imprimirAreaCirculo").textContent=circulo1.calcularArea()
+    document.getElementById("imprimirAreaCirculo").textContent="Resultado: "+circulo1.calcularArea()
 });
 
 class Rectangulo extends Figura{
@@ -189,7 +181,7 @@ document.getElementById('miFormulario7').addEventListener('submit', function(eve
     ancho = document.getElementById('ancho').value;
 
     rectangulo1=new Rectangulo(color,area,largo,ancho)
-    document.getElementById("imprimirAreaRectangulo").textContent=rectangulo1.calcularArea()
+    document.getElementById("imprimirAreaRectangulo").textContent="Resultado: "+rectangulo1.calcularArea()
 });
 
 ///////////////
@@ -219,7 +211,7 @@ document.getElementById('miFormulario8').addEventListener('submit', function(eve
     velocidad = document.getElementById('velocidad').value;
 
     vehiculo1=new Vehiculo(marca,modelo,velocidad)
-    document.getElementById("velocidadActual").textContent=vehiculo1.acelerar()
+    document.getElementById("velocidadActual").textContent="Resultado: "+vehiculo1.acelerar()
 });
 
 class Coche extends Vehiculo{
@@ -245,7 +237,7 @@ document.getElementById('miFormulario9').addEventListener('submit', function(eve
 document.getElementById('miFormulario10').addEventListener('submit', function(event) {
     event.preventDefault(); 
     vehiculo1=new Vehiculo(marca,modelo,velocidad)
-    document.getElementById("imprimirConversion").textContent=Vehiculo.convertirKmHEnMph(vehiculo1.velocidad)
+    document.getElementById("imprimirConversion").textContent="Resultado: "+Vehiculo.convertirKmHEnMph(vehiculo1.velocidad)
 });
 
 
@@ -281,7 +273,7 @@ document.getElementById('miFormulario11').addEventListener('submit', function(ev
     sueldoEmpleado = document.getElementById('sueldoEmpleado').value;
 
     empleado1=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado)
-    document.getElementById("imprimirSuedo").textContent=empleado1.calcularSalarioAnual()
+    document.getElementById("imprimirSuedo").textContent="Resultado: "+empleado1.calcularSalarioAnual()
 });
 
 class Gerente extends Empleado{
@@ -307,13 +299,12 @@ document.getElementById('miFormulario12').addEventListener('submit', function(ev
     departamento = document.getElementById('departamento').value;
 
     gerente1=new Gerente(nombreGerente,edadGerente,sueldoGerente,departamento)
-    document.getElementById("imprimirSuedoGerente").textContent=gerente1.calcularSalarioAnual()
+    document.getElementById("imprimirSuedoGerente").textContent="Resultado: "+gerente1.calcularSalarioAnual()
 });
 
 //Llamada a metodo estatico
-let empleado2
-empleado1=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=1
-empleado2=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=2
+//id=1
+/* empleado1=new Empleado(nombreEmpleado,edadEmpleado,sueldoEmpleado) //id=1 debido a que ya se habia definido anteriormente */
 document.getElementById('boton').addEventListener("click", function() {
-    document.getElementById("llamar").innerHTML="<h1>"+ Empleado.generarIdEmpleado() +"</h1>"
+    document.getElementById("llamar").innerHTML="<h1>Resultado: "+ Empleado.generarIdEmpleado() +"</h1>"
 });
